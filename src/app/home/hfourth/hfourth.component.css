@@ -13,14 +13,15 @@
 
 .con img {
   max-width: 100%;
-  width: 600px;
-  height: 665px;
+  width: 500px;
+  /* height: 665px; */
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .con p {
   max-width: 600px;
+  max-height: 500px;
   font-size: 1.05rem;
   line-height: 1.8;
   color: #333;
@@ -29,6 +30,8 @@
   border-left: 6px solid red;
   border-radius: 10px;
   box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  overflow: scroll;
+  scrollbar-width: none;
 }
 
 .con p::first-line {

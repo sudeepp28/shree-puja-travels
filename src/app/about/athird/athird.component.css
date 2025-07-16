@@ -118,3 +118,37 @@
     height: 50px;
   }
 }
+/* Book Now Button Styling */
+.fleet-section button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid red;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Tektur', sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 10px auto;
+  display: block;
+}
+
+/* Red Section (white button with red text) */
+.fleet-section.red-bg button {
+  background-color: white;
+  color: red;
+}
+
+/* White Section (red button with white text) */
+.fleet-section.white-bg button {
+  background-color: red;
+  color: white;
+}
+
+/* Hover Effect */
+.fleet-section button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
