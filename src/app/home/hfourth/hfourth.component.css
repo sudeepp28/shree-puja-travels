@@ -1,0 +1,38 @@
+.con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: #1d1d1d4d;
+  font-family: 'Exo 2', sans-serif;
+  color: #000;
+  gap: 40px;
+  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.3), 0 -1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.con img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.con p {
+  max-width: 600px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  background: #f9f9f9;
+  padding: 25px 30px;
+  border-left: 6px solid red;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.con p::first-line {
+  font-weight: bold;
+  color: #c90000;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,122 @@
+
+
+/* Fleet Heading */
+.fleet-heading {
+  border-top: 1px dashed red;
+  background-color: white;
+  text-align: center;
+  padding: 30px 10px;
+   font-family: 'Exo 2'
+}
+
+.fleet-heading h2 {
+  color: red;
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Section Container */
+.fleet-section {
+  position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.fleet-section.red-bg {
+  background-color: red;
+  color: white;
+}
+
+.fleet-section.white-bg {
+  background-color: white;
+  color: black;
+}
+
+/* Fleet Content Layout */
+.fleet-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fleet-content.left {
+  flex-direction: row;
+}
+
+.fleet-content.right {
+  flex-direction: row-reverse;
+}
+
+/* Image Styling */
+.fleet-content img {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+}
+.smlimg{
+  width: 1000px;
+}
+
+/* Text Block */
+.fleet-content .text {
+  max-width: 600px;
+  font-family: 'Tektur';
+}
+
+.fleet-content .text h3 {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.fleet-content.left .text h3 {
+  color: white;
+}
+
+.fleet-content.right .text h3 {
+  color: red;
+}
+
+.fleet-content .text p {
+  margin-top: 1rem;
+  font-size: 16px;
+  color: black;
+}
+
+/* ✅ Diagonal Divider using clip-path */
+.diagonal-divider {
+  width: 105%;
+  height: 80px;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 100%, 100% 100%, 0 100%);
+  left: 0;
+  position: absolute;
+  bottom: 0;
+
+}
+
+.diagonal-divider.reverse {
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+
+}
+
+/* 📱 Responsive Fix for Mobile */
+@media (max-width: 768px) {
+  .fleet-content {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .fleet-content img {
+    width: 100%;
+    margin: 20px 0;
+  }
+ 
+
+  .diagonal-divider {
+    height: 50px;
+  }
+}

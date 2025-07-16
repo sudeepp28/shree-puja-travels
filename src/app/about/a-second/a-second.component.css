@@ -1,0 +1,29 @@
+div {
+  background-color: white;
+  color: #111;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-family: 'Tektur';
+}
+
+div h1 {
+  text-align: center;
+  color: red;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+div p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+div strong {
+  color: #f15656; /* Red highlight */
+}
+
+div em {
+  font-style: italic;
+}

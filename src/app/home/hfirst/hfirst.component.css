@@ -1,0 +1,42 @@
+.hero-section {
+  background: linear-gradient(to bottom, red, black);
+  color: white;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  /* font-family: 'Exo 2', ; */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+    font-family: 'exo 2';
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+   font-family: 'Tektur';
+}
+
+.hero-btn {
+  background-color: white;
+  color: red;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: black;
+  color: white;
+}

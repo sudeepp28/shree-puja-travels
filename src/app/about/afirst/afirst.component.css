@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.con {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.con h1 {
+  font-size: 3rem;
+  color: red;
+  margin: 0;
+  font-family: 'Exo 2';
+}
+
+.con h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: white;
+  font-family: 'Exo 2';
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b71c1c;
+}

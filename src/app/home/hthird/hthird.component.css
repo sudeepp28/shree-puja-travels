@@ -1,0 +1,127 @@
+.con {
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: 'Tektur';
+  color: #111;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  color: red;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header h4 {
+  color: #444;
+  max-width: 1000px;
+  margin: 10px auto 0;
+  line-height: 1.6;
+}
+
+/* Flex container */
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Left and Right content boxes */
+.left-con, .right-con {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Mid content (image + one block) */
+.mid-con {
+  flex: 1 1 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mid-con img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.mid-con .text {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.mid-con .text h3 {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.mid-con .text p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Common styles for all boxes */
+.left-con > div,
+.right-con > div {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-left: 4px solid red;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease-in-out;
+}
+
+.left-con h3,
+.right-con h3 {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.left-con p,
+.right-con p {
+  color: #333;
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .mid-con {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mid-con img {
+    margin: 0 auto 20px;
+  }
+
+  .mid-con .text {
+    text-align: center;
+  }
+}

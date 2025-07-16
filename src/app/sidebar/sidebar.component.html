@@ -1,0 +1,19 @@
+<div class="backdrop" (click)="handleClose()"></div>
+<div class="sidebar" >
+  <button class="close-btn" (click)="handleClose()">×</button>
+  <a routerLink="/" (click)="handleClose()">Home</a>
+  <a routerLink="/about" (click)="handleClose()">About Us</a>
+  <a routerLink="/services" (click)="handleClose()">Our Services</a>
+  <!-- <a routerLink="/contact-us" (click)="handleClose()">Contact Us</a> -->
+
+   <div class="social-icons">
+        <a href="."><i class="fa-brands fa-facebook" style="color: rgb(127, 127, 235);"></i></a>
+        <a href="."><i class="fa-brands fa-linkedin" style="color: rgb(1, 1, 150);"></i></a>
+        <a href="."><i class="fa-brands fa-twitter" style="color: rgb(41, 41, 240);"></i></a>
+        <a href="."><i class="fa-brands fa-instagram" style="color: rgb(240, 19, 229);"></i></a>
+      </div><br><br>
+      <p>Call:- <strong>+919728115781</strong></p>
+      <br>
+  <!-- <button class="sign-in-btn">Sign in</button> -->
+  <button class="contact-btn" (click)="goTo()">Contact Us</button>
+</div>

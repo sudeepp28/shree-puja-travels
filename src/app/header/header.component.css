@@ -1,0 +1,122 @@
+.header {
+  position: fixed;
+  /* top: 5%; */
+  width: 100%;
+  /* left: 5%; */
+  /* right: 5%; */
+  background-color: #ffffff;
+  z-index: 990;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* border-radius: 50px; */
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 0 5px #333, 0 0 10px #444;
+  /* box-shadow: 0 2px 5px rgba(46, 77, 255, 0.836); */
+
+}
+
+
+.header .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header .logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.header .nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: 'Tektur','exo 2';
+}
+
+.header .nav-links a:hover,
+.header .nav-links a.active {
+  /* color: #00aaff; */
+  border-bottom: 1px solid red;
+  padding: 4px;
+  font-weight: bold;
+  /* background-color: rgba(0, 170, 255, 0.1); */
+  border-radius: 10px;
+}
+
+/* Buttons */
+.header .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header .sign-in-btn,
+.header .contact-btn {
+  padding: 6px 14px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.header .sign-in-btn:hover,
+.header .contact-btn:hover {
+  background-color: #008ecc;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: red;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header {
+    /* top: 5%; */
+    /* left: 5%; */
+    width: 100%;
+   
+    padding: 0;
+    align-items: center;
+  }
+
+  .header .container {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header .buttons {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .desktop,
+  .sign-in-btn,
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
