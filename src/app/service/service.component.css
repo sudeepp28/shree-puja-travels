@@ -20,6 +20,19 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: white;
+  opacity: 0;
+  animation: fadein 1.5s ease-in-out   forwards ;
+}
+ 
+@keyframes fadein {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Promo Banner Section */
@@ -40,6 +53,8 @@
   /* border: 3px solid red; */
   /* box-shadow: 0 0 20px rgba(255, 0, 0, 0.2); */
   transition: transform 0.3s ease;
+  opacity: 0;
+   animation: fadein 1.5s ease-in-out 0.25s  forwards ;
 }
 
 .promo-img:hover {
@@ -57,6 +72,8 @@
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s ease;
+  opacity: 0;
+   animation: fadein 1.5s ease-in-out 0.5s  forwards ;
 }
 
 .hero-btn:hover {

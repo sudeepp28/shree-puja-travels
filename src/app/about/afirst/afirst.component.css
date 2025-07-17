@@ -18,6 +18,19 @@ body {
   color: red;
   margin: 0;
   font-family: 'Exo 2';
+  opacity: 0;
+   animation: fadein 1.5s ease-in-out   forwards ;
+}
+
+@keyframes fadein {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .con h3 {
@@ -26,6 +39,8 @@ body {
   margin-top: 10px;
   color: white;
   font-family: 'Exo 2';
+  opacity: 0;
+   animation: fadein 1.5s ease-in-out 0.25s  forwards ;
 }
 
 .btn {
@@ -35,8 +50,10 @@ body {
   font-size: 16px;
   border: none;
   border-radius: 6px;
+  opacity: 0;
   cursor: pointer;
   transition: background 0.3s ease;
+   animation: fadein 1.5s ease-in-out 0.5s  forwards ;
 }
 
 .btn:hover {
