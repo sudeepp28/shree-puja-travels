@@ -1,0 +1,81 @@
+.blog-post, .blog-post1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog-post image first, text next */
+.blog-post img,
+.blog-post1 img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog text styles */
+.blog-text, .blog-text1 {
+  flex: 1;
+  min-width: 280px;
+}
+
+.blog-text h2, .blog-text1 h1 {
+  color: red;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'tektur';
+}
+
+.blog-text p, .blog-text1 p {
+  color: #111;
+  font-size: 17px;
+  line-height: 1.6;
+  font-family: 'tektur';
+}
+
+.blog-text strong, .blog-text1 strong {
+  color: red;
+  font-weight: 600;
+}
+
+/* Reverse layout for blog-post1 */
+.blog-post1 {
+  /* flex-direction: row-reverse; */
+  background-color: #f9f9f9;
+  border-left: 6px solid red;
+}
+
+.blog-post {
+  border-right: 6px solid red;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-post, .blog-post1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .blog-text h2, .blog-text1 h1 {
+    font-size: 22px;
+  }
+
+  .blog-text p, .blog-text1 p {
+    font-size: 16px;
+  }
+
+  .blog-post, .blog-post1 {
+    border: none;
+  }
+}

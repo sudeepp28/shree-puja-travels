@@ -90,7 +90,10 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   transition: 0.3s ease-in-out;
 }
-
+.left-con > div{
+    border-left: none;
+      border-right: 4px solid red;
+}
 .left-con h3,
 .right-con h3 {
   color: red;
@@ -123,5 +126,13 @@
 
   .mid-con .text {
     text-align: center;
+  }
+  .right-con > div{
+    border-left: none;
+    border-top: 4px solid red;
+  }
+   .left-con > div{
+    border-right: none;
+    border-bottom: 4px solid red;
   }
 }

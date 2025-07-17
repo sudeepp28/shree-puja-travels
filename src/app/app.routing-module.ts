@@ -3,6 +3,7 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   {path:'about',component:AboutComponent},
-  {path:'service', component:ServiceComponent}
+  {path:'service', component:ServiceComponent},
+  {path:'blogs', component:BlogsComponent}
 ]
 
 @NgModule({

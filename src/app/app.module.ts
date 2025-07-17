@@ -29,6 +29,10 @@ import { SsecondComponent } from "./service/ssecond/ssecond.component";
 import { SthirdComponent } from "./service/sthird/sthird.component";
 import { SfourthComponent } from "./service/sfourth/sfourth.component";
 import { SfifthComponent } from "./service/sfifth/sfifth.component";
+import { BlogsComponent } from "./blogs/blogs.component";
+import { BfirstComponent } from "./blogs/bfirst/bfirst.component";
+import { BsecondComponent } from "./blogs/bsecond/bsecond.component";
+import { BthirdComponent } from "./blogs/bthird/bthird.component";
 
 
 
@@ -47,7 +51,7 @@ import { SfifthComponent } from "./service/sfifth/sfifth.component";
 @NgModule({
     declarations:[AppComponent,
        HomeComponent ,HeaderComponent,AboutComponent,AfirstComponent,ASecondComponent ,AthirdComponent,SidebarComponent ,
-    HfirstComponent,HsecondComponent,HthirdComponent,AfourthComponent,HfourthComponent ,FooterComponent,ServiceComponent,SfirstComponent,SsecondComponent,SthirdComponent,SfourthComponent,SfifthComponent  ],
+    HfirstComponent,HsecondComponent,HthirdComponent,AfourthComponent,HfourthComponent ,FooterComponent,ServiceComponent,SfirstComponent,SsecondComponent,SthirdComponent,SfourthComponent,SfifthComponent,BlogsComponent,BfirstComponent ,BsecondComponent,BthirdComponent ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,

@@ -1,0 +1,119 @@
+.blog-post, .blog-post1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 30px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+/* Image Styling */
+.blog-post img,
+.blog-post1 img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Text Styling */
+.blog-text, .blog-text1 {
+  flex: 1;
+  min-width: 280px;
+}
+
+.blog-text h1,
+.blog-text1 h1 {
+  font-size: 28px;
+  color: #d40000;
+  margin-bottom: 20px;
+  font-family: 'tektur';
+  font-weight: 700;
+}
+
+.blog-text h1 em,
+.blog-text1 h1 em {
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.blog-text p,
+.blog-text1 p {
+  font-size: 17px;
+  color: #222;
+  line-height: 1.7;
+  font-family: 'tektur';
+}
+
+.blog-text strong em,
+.blog-text1 strong {
+  color: red;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Zigzag Layout */
+.blog-post1 {
+  /* flex-direction: row-reverse; */
+  background-color: #fdfdfd;
+}
+
+/* Optional: Add Red Diagonal Divider Line Between Sections */
+.blog-post::after, .blog-post1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: red;
+  top: 0;
+  transform: skewY(-4.5deg);
+}
+.blog-post::before,
+.blog-post1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: red;
+  bottom: 0;
+  right: 0;
+  transform: skewY(-4.5deg);/* Width of accent */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-post, .blog-post1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .blog-post::after,
+  .blog-post1::after {
+    /* transform: none; */
+    height: 4px;
+  }
+   .blog-post::before,
+  .blog-post1::before {
+    /* transform: none; */
+    height: 4px;
+  }
+
+  .blog-text h1, .blog-text1 h1 {
+    font-size: 22px;
+  }
+
+  .blog-text p, .blog-text1 p {
+    font-size: 16px;
+  }
+}
