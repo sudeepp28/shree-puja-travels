@@ -2,8 +2,12 @@
 
 </div>
 
-<app-afirst></app-afirst>
+<app-afirst (open)="openpopup()"></app-afirst>
 <app-a-second></app-a-second>
-<app-athird></app-athird>
+<app-athird (open)="openpopup()"></app-athird>
 <app-afourth></app-afourth>
 <app-hfourth></app-hfourth>
+
+@if(ispopup){
+    <app-call-now (close)="closepopup()"></app-call-now>
+}

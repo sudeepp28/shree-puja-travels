@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-afirst',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './afirst.component.css'
 })
 export class AfirstComponent {
-
+@Output() open=new EventEmitter()
+openPopup(){
+  this.open.emit()
+}
 }

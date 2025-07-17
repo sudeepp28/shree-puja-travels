@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-goToBooking(){
-  
+ispopup=false
+openpopup(){
+  this.ispopup=true
+}
+closepopup(){
+  this.ispopup=false
 }
 }

@@ -3,7 +3,11 @@
 </div>
 
 
-<app-hfirst></app-hfirst>
+<app-hfirst (open)="openpopup()"></app-hfirst>
 <app-hsecond></app-hsecond>
 <app-hthird></app-hthird>
 <app-hfourth></app-hfourth>
+
+@if(ispopup){
+    <app-call-now (close)="closepopup()"></app-call-now>
+}

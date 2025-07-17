@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './service.component.css'
 })
 export class ServiceComponent {
+ispopup=false;
 
+openpopup(){
+this.ispopup=true
+}
+closepopup(){
+  this.ispopup=false
+}
 }

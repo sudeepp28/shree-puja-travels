@@ -21,6 +21,7 @@
   letter-spacing: 2px;
   color: white;
   opacity: 0;
+  font-family: 'exo 2';
   animation: fadein 1.5s ease-in-out   forwards ;
 }
  

@@ -35,7 +35,7 @@
   font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'exo 2';
   margin-bottom: 10px;
   position: relative;
   opacity: 0;
@@ -60,7 +60,7 @@
 .blogs-header p {
   color: #ccc;
   font-size: 1.1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'tektur';
   margin: 0 auto;
   max-width: 600px;
   animation: fadein 1.5s ease-in-out 0.5s  forwards;

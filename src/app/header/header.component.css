@@ -74,6 +74,7 @@
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.3s;
+  font-family: 'tektur';
 }
 
 .header .sign-in-btn:hover,

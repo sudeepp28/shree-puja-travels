@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-hfirst',
@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './hfirst.component.css'
 })
 export class HfirstComponent {
+ @Output() open=new EventEmitter()
 goToBooking(){
-
+this.open.emit()
 }
+
 }

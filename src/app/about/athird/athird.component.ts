@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-athird',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './athird.component.css'
 })
 export class AthirdComponent {
+@Output() open=new EventEmitter()
 
+openPopup(){
+  this.open.emit()
+}
 }

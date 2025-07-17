@@ -8,7 +8,7 @@
 
 <div class="promo-banner">
   <img src="assets/s1.jpg" alt="Promo" class="promo-img" />
-  <button class="hero-btn">Book Now</button>
+  <button class="hero-btn" (click)="openpopup()">Book Now</button>
 </div>
 
 <app-sfirst></app-sfirst>
@@ -16,3 +16,6 @@
 <app-sthird></app-sthird>
 <app-sfourth></app-sfourth>
 <app-sfifth></app-sfifth>
+@if(ispopup){
+    <app-call-now (close)="closepopup()"></app-call-now>
+}
