@@ -1,74 +1,82 @@
-.blank{
-    height: 120px;
-    background-color: red;
+.blank {
+  height: 100px;
+  background-color: red;
 }
 
-
-
+/* Hero Section */
 .hero-section {
   background: linear-gradient(to bottom, red, black);
   color: white;
-  height: 20vh;
+  padding: 60px 20px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 20px;
-  /* flex-direction: column; */
-  /* font-family: 'Exo 2', ; */
+
 }
 
-.hero-content h1 {
+.hero-section h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-    font-family: 'exo 2';
+  letter-spacing: 2px;
+  color: white;
 }
-.promo-video-section {
-  background-color: #000000;
-  padding: 40px 20px;
+
+/* Promo Banner Section */
+.promo-banner {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 20px;
   text-align: center;
-  font-family: 'exo 2';
 }
 
-.promo-video-section h2 {
-  color: red;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-.bg{
-    background-color: #000000;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 15px;
-}
-
-.img {
+.promo-img {
   width: 100%;
-  max-width: 300px;
-  /* border: 4px solid black; */
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 480px;
+  border-radius: 12px;
+  /* border: 3px solid red; */
+  /* box-shadow: 0 0 20px rgba(255, 0, 0, 0.2); */
+  transition: transform 0.3s ease;
 }
 
+.promo-img:hover {
+  transform: scale(1.02);
+}
+
+/* Book Now Button */
 .hero-btn {
-  background-color: white;
-  color: red;
-  border: none;
-  padding: 12px 30px;
-  font-size: 16px;
-  font-weight: 600;
+  background: red;
+  color: white;
+  border: 2px solid red;
+  padding: 14px 40px;
+  font-size: 1rem;
+  font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.3s;
-  margin-bottom: 5px;
+  transition: 0.3s ease;
 }
 
 .hero-btn:hover {
-  background-color: red;
-  color: white;
+  background: white;
+  color: red;
+  border: 2px solid white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
+
+  .promo-img {
+    width: 90%;
+  }
 }
