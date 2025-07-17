@@ -24,6 +24,11 @@ import { AfourthComponent } from "./about/afourth/afourth.component";
 import { HfourthComponent } from "./home/hfourth/hfourth.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ServiceComponent } from "./service/service.component";
+import { SfirstComponent } from "./service/sfirst/sfirst.component";
+import { SsecondComponent } from "./service/ssecond/ssecond.component";
+import { SthirdComponent } from "./service/sthird/sthird.component";
+import { SfourthComponent } from "./service/sfourth/sfourth.component";
+import { SfifthComponent } from "./service/sfifth/sfifth.component";
 
 
 
@@ -42,7 +47,7 @@ import { ServiceComponent } from "./service/service.component";
 @NgModule({
     declarations:[AppComponent,
        HomeComponent ,HeaderComponent,AboutComponent,AfirstComponent,ASecondComponent ,AthirdComponent,SidebarComponent ,
-    HfirstComponent,HsecondComponent,HthirdComponent,AfourthComponent,HfourthComponent ,FooterComponent,ServiceComponent  ],
+    HfirstComponent,HsecondComponent,HthirdComponent,AfourthComponent,HfourthComponent ,FooterComponent,ServiceComponent,SfirstComponent,SsecondComponent,SthirdComponent,SfourthComponent,SfifthComponent  ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,

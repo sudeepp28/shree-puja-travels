@@ -1,0 +1,93 @@
+.con {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  background-color: #fff;
+  border-right: 6px solid red;
+  border-radius: 12px;
+  /* margin: 50px auto; */
+  /* max-width: 1100px; */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.con .text {
+  flex: 1;
+  min-width: 260px;
+  color: #111;
+  font-family: 'tektur';
+}
+
+.con .text h2 {
+  font-size: 1.6rem;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.con .text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.con .text span {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: black;
+  background-color: red;
+  padding: 5px 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+.con .text ul {
+  margin-top: 15px;
+  padding-left: 20px;
+  color: #111;
+}
+
+.con .text ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  font-size: 1rem;
+  list-style: none;
+}
+.con .text p strong{
+    color:red;
+} 
+.con .text ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: red;
+  font-weight: bold;
+}
+
+.con img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 4px solid red;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .con {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .con .text {
+    text-align: left;
+  }
+
+  .con img {
+    margin-top: 20px;
+  }
+}
