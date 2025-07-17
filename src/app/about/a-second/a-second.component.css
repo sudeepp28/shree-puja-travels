@@ -27,3 +27,18 @@ div strong {
 div em {
   font-style: italic;
 }
+.btn {
+  background-color: red;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+ text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #b71c1c;
+}

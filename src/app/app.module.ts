@@ -23,6 +23,7 @@ import { HthirdComponent } from "./home/hthird/hthird.component";
 import { AfourthComponent } from "./about/afourth/afourth.component";
 import { HfourthComponent } from "./home/hfourth/hfourth.component";
 import { FooterComponent } from "./footer/footer.component";
+import { ServiceComponent } from "./service/service.component";
 
 
 
@@ -41,7 +42,7 @@ import { FooterComponent } from "./footer/footer.component";
 @NgModule({
     declarations:[AppComponent,
        HomeComponent ,HeaderComponent,AboutComponent,AfirstComponent,ASecondComponent ,AthirdComponent,SidebarComponent ,
-    HfirstComponent,HsecondComponent,HthirdComponent,AfourthComponent,HfourthComponent ,FooterComponent  ],
+    HfirstComponent,HsecondComponent,HthirdComponent,AfourthComponent,HfourthComponent ,FooterComponent,ServiceComponent  ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,

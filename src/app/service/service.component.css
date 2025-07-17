@@ -1,0 +1,34 @@
+.blank{
+    height: 120px;
+    background-color: black;
+}
+.services-header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.diagonal-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: red;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: inset 0 -3px 10px rgba(0, 0, 0, 0.6), 0 8px 20px rgba(0, 0, 0, 0.4);
+  /* transform: rotate(45deg); */
+}
+
+.diagonal-bg h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'tektur';
+ text-shadow:  0 0px 10px black  ;
+  /* transform: rotate(-45deg); Optional for stylized effect */
+}
