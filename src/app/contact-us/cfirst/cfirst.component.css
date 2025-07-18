@@ -1,0 +1,75 @@
+.con {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  border: 2px solid #e60000; /* red border */
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.con h1 {
+  font-size: 1.8rem;
+  color: #e60000; /* red */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.number-box {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.email {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.call-btn,
+.whatsapp-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 80%;
+  transition: background 0.3s, color 0.3s;
+}
+
+.call-btn {
+  background: #e60000;
+  color: #fff;
+  border: none;
+}
+
+.call-btn:hover {
+  background: #cc0000;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.whatsapp-btn i {
+  font-size: 1.2rem;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}

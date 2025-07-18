@@ -1,0 +1,14 @@
+<div class="con">
+    <h1>Contact us directly</h1>
+    <br>
+    
+  <div class="number-box">{{ adminPhone }}</div>
+  <div class="email">📧{{email}}</div>
+  <a class="call-btn" [href]="'tel:' + adminPhone">📞Call Now</a>
+  <a class="whatsapp-btn" 
+     [href]="'https://wa.me/' + adminPhone.replace('+', '') + '?text=' + prefilledText"
+     target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
+    Chat on WhatsApp
+  </a>
+</div>
