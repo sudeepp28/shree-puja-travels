@@ -42,7 +42,35 @@ export class TestimonialComponent implements OnInit, OnDestroy {
       name: "Vijay Thakur, Delhi",
       location: "Customer, rented a Sedan",
       image: "assets/t5.jpeg"
-    }
+    },
+     {
+      heading: '',
+      text:'We booked a five-day outstation trip with Shree Puja Travels, and it was a fantastic experience. The driver was courteous, patient, and ensured our comfort throughout the journey. The car was spacious and well-maintained, making our trip smooth and enjoyable. Thank you for such excellent service!',
+      name: "Anand & Meena Sharma",
+      location: "Customer, rented a Sedan",
+      image: "assets/t6.jpeg"
+    },
+     {
+      heading: '',
+      text:'Shree Puja Travels stands out as one of the finest travel services available in Hyderabad. As someone visiting from another city, I found the entire experience exceptionally comfortable and hassle-free. The level of care and attention to detail provided is truly top-class. The vehicle was impeccably clean, well-maintained, and personally managed, offering a sense of reliability and warmth. Safety is clearly a top priority, which adds to the peace of mind while traveling. Without a doubt, Shri Puja Travels is the best choice in Hyderabad, and I would confidently recommend their services to anyone seeking quality and professionalism.',
+      name: "Dr. Mahima Dand",
+      location: "Customer, rented a SUV",
+      image: "assets/t7.jpeg"
+    },
+     {
+      heading: '',
+      text:'As a senior citizen, I appreciate punctual and reliable service, and Shree Puja Travels exceeded my expectations. Our five-day trip was stress-free, the driver assisted us at every stop, and the car was incredibly comfortable. I highly recommend them for long journeys!',
+      name: "Surendra Rao",
+      location: "Customer, rented a Sedan",
+      image: "assets/t8.jpeg"
+    },
+     {
+      heading: '',
+      text:'I had an amazing experience with Shree Puja Travels. The car was in excellent condition, and the chauffeur was very professional.The entire process was smooth and hassle-free. Highly recommended!',
+      name: "Rajesh Kumar",
+      location: "Customer, rented a Sedan",
+      image: "assets/t9.jpeg"
+    },
   ];
 
   currentSlide = 0;
