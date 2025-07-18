@@ -2,14 +2,36 @@
   position: relative;
   overflow: hidden;
   padding: 50px 20px;
-  background-image: url('/assets/card sedan.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fff;
+  background-color: #181818;
   color: #111;
   border-top: 5px solid red;
   border-bottom: 5px solid red;
+}
+.testimonial-container::before{
+  content: '';
+ content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(135deg, #fff 50%, transparent 50%);
+  z-index: 0;
+  opacity: 0.05;
+  transform: rotate(5deg);
+}
+.testimonial-container::after{
+  content: '';
+ content: '';
+  position: absolute;
+  bottom: 0;
+  right: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(135deg, #fff 50%, transparent 50%);
+  z-index: 0;
+  opacity: 0.05;
+  transform: rotate(-20deg);
 }
 
 .testimonial-slide {
@@ -22,6 +44,7 @@
   transition: all 0.4s ease-in-out;
   max-width: 700px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .testimonial-slide.active {
@@ -74,9 +97,9 @@ h4 {
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
-  background: rgba(255, 255, 255, 0.8);
+  background: red;
   border: 2px solid red;
-  color: red;
+  color: white;
   padding: 5px 10px;
   border-radius: 50%;
   cursor: pointer;

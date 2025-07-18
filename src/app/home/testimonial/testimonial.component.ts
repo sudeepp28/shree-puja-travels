@@ -11,7 +11,7 @@ export class TestimonialComponent implements OnInit, OnDestroy {
      {
       heading:'"A truly hassle-free experience!"',
       text:'We booked a Tempo Traveller for our Tirupati Balaji trip. The cab was clean, the driver was punctual and polite, and the whole journey was very comfortable. I will definitely book again!',
-      name: "Sana Khan, Mumbai",
+      name: "Ramesh Iyer, Chennai",
       location: "Customer, rented a Traveler",
       image: "assets/t1.jpeg"
     },
