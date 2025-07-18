@@ -1,0 +1,119 @@
+.testimonial-container {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 20px;
+  background-image: url('/assets/card sedan.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  color: #111;
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+}
+
+.testimonial-slide {
+  display: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: all 0.4s ease-in-out;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.testimonial-slide.active {
+  display: block;
+  animation: fadein 0.5s ease-in-out;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.message {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid red;
+}
+
+h3.heading {
+  color: red;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid red;
+  color: red;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+.nav:hover {
+  background: red;
+  color: #fff;
+}
+
+.nav.prev {
+  left: 20px;
+}
+
+.nav.next {
+  right: 20px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #999;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background-color: red;
+  transform: scale(1.2);
+}

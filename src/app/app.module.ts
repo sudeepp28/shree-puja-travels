@@ -34,6 +34,7 @@ import { BfirstComponent } from "./blogs/bfirst/bfirst.component";
 import { BsecondComponent } from "./blogs/bsecond/bsecond.component";
 import { BthirdComponent } from "./blogs/bthird/bthird.component";
 import { CallNowComponent } from "./call-now/call-now.component";
+import { TestimonialComponent } from "./home/testimonial/testimonial.component";
 
 
 
@@ -52,7 +53,7 @@ import { CallNowComponent } from "./call-now/call-now.component";
 @NgModule({
     declarations:[AppComponent,
        HomeComponent ,HeaderComponent,AboutComponent,AfirstComponent,ASecondComponent ,AthirdComponent,SidebarComponent ,
-    HfirstComponent,HsecondComponent,HthirdComponent,AfourthComponent,HfourthComponent ,FooterComponent,ServiceComponent,SfirstComponent,SsecondComponent,SthirdComponent,SfourthComponent,SfifthComponent,BlogsComponent,BfirstComponent ,BsecondComponent,BthirdComponent,CallNowComponent],
+    HfirstComponent,HsecondComponent,HthirdComponent,AfourthComponent,HfourthComponent ,FooterComponent,ServiceComponent,SfirstComponent,SsecondComponent,SthirdComponent,SfourthComponent,SfifthComponent,BlogsComponent,BfirstComponent ,BsecondComponent,BthirdComponent,CallNowComponent,TestimonialComponent],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,

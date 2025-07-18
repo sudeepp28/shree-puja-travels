@@ -1,0 +1,31 @@
+<div class="testimonial-container"
+(touchstart)="handleTouchStart($event)"
+     (touchend)="handleTouchEnd($event)">
+    
+  <div 
+    class="testimonial-slide" 
+    *ngFor="let t of testimonials; let i = index"
+    [class.active]="i === currentSlide"
+  > 
+  <h3 class="heading">{{t.heading}}</h3>
+    <p class="message">"{{ t.text }}"</p>
+    <img [src]="t.image" class="avatar" />
+    <h4>{{ t.name }}</h4>
+    <p class="info">{{ t.location }}</p>
+  </div>
+
+  <!-- Nav buttons -->
+  <button class="nav prev" (click)="prevSlide()">&#10094;</button>
+  <button class="nav next" (click)="nextSlide()">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span 
+      class="dot" 
+     *ngFor="let t of testimonials; let j = index"
+
+      [class.active]="j === currentSlide"
+      (click)="goToSlide(j)"
+    ></span>
+  </div>
+</div>
