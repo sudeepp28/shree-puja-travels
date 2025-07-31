@@ -10,7 +10,7 @@ export class CallNowComponent {
 @Output() close = new EventEmitter<void>();
 
   adminPhone: string = '+919100390049';
-  prefilledText: string = encodeURIComponent('Hi, I would like to book a cab with Shree Puja Travels.');
+  prefilledText: string = encodeURIComponent('Hi, I would like to book a cab with My Journey Cabs.');
 
   closePopup() {
     this.close.emit();

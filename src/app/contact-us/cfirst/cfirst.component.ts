@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class CfirstComponent {
  adminPhone: string = '+919100390049';
-  prefilledText: string = encodeURIComponent('Hi, I would like to book a cab with Shree Puja Travels.');
+  prefilledText: string = encodeURIComponent('Hi, I would like to book a cab with My Journey Cabs.');
   email='shreepujatraveldesk@gmail.com'
 }
